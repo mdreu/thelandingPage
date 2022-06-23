@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+:root{
+    font-family: 'Anek Latin', sans-serif;
+    --accent: rgb(138, 182, 138);
+   --click: rgb(32, 155, 114);
+}
+/* Navigation */
+nav {
+    
+    height: 50px;
+    position: relative;
+    
+    margin: 0;
+    box-shadow: 0 4px 6px -6px #222;
+  }
+  
+  #logo {
+    color: var(--accent);
+    display: inline-block;
+    
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  #options {
+      position: relative;
+      display: inline;
+      
+  }
+  #options a {
+      margin-left: 20%;
+      text-decoration: none;
+
+  }
+  
+  
+/* Navigation End */
+span {
+    color: var(--accent);
+}
+#credibility {
+    margin: 10px;
+    font-size: 20px;
+}
+#credibility h1 {
+    color:var(--accent);
+}
+button {
+    border: none; 
+    background-color:var(--accent); color:white;
+    font-size: 40px;
+    padding: 5px;
+    margin: 80px;
+    border-radius: 10px;
+}
+button:hover {
+    cursor: pointer;
+    filter: brightness(60%);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#social {
+    margin-top: 100px;
+}
+#mainScreen {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(people.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    filter: brightness(29%);
+    position: absolute;
+   z-index: -1;
+   margin: 0;
+}
+#introWords {
+    text-align: center;
+    color: white;
+    height: 460px;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+#webDev, #marketing {
+    display: flex;
+    text-align: center;
+    box-shadow: 0 4px 6px -6px #222;
+}
+#webDev h1, #marketing h1{
+    color: var(--accent);
+}
+#projCase {
+    display: grid;
+    gap: 10px;
+    margin: 5px;
+    
+}
+#project1 {
+    width: 100px;
+    height: 100px;
+    
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    text-decoration: none;
+}
+#project2 {
+    width: 100px;
+    height: 100px;
+    
+    grid-column: 1 / 2;
+    grid-row: 2/2;
+    text-decoration: none;
+}#project3 {
+    width: 100px;
+    height: 100px;
+    
+    grid-column: 2 / 2;
+   grid-row: 1/2;
+   text-decoration: none;
+}#project4 {
+    width: 100px;
+    height: 100px;
+    
+    grid-column: 2 / 2;
+   grid-row: 2/2;
+   text-decoration: none;
+}
+@media only screen and (max-width: 388px) {
+    #options a {
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 467px)
+{
+    #introWords {
+        margin: 15px;
+    }
+}
